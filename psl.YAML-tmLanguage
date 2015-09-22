@@ -1,0 +1,44 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: PSL
+scopeName: source.psl
+fileTypes: [psl, PSL]
+uuid: 39cf642a-3358-4c3b-88d0-d38576c93e51
+
+patterns:
+- comment: Line Comment
+  name: comment.line.double-slash
+  match: '[ \t]*\/\/.*'
+
+- comment: Error
+  name: invalid.deprecated
+  match: \berror\b
+
+- comment: Chapter
+  name: keyword.other
+  match: \bchapter .*
+
+- comment: Control
+  name: keyword.control
+  match: \binlineMap\b|\bcheck\b|\bif\b|\belse\b|\belseif\b|\belse\b|\bswitch\b|\bdefault\b|\bdown\b|\bup\b
+
+- comment: Operators
+  name: keyword.operator
+  match: \band\b|\bor\b|\bnot\b|\bround\b|\bon\b
+
+- comment: Constant Keywords
+  name: support.type
+  match: \bINF\b|\bNINF\b|\btrue\b|\bfalse\b
+
+- comment: Parameters
+  name: constant.character
+  match: \#[_A-Za-z]+\w*\b
+
+- comment: Numbers
+  name: constant.numeric
+  match: \b[0-9]+(.[0-9]+)?\%?
+
+- comment: Variables
+  name: variable.parameter
+  match: '[_A-Za-z]+\w*\b'
+...

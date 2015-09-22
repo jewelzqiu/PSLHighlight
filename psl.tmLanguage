@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>psl</string>
+		<string>PSL</string>
+	</array>
+	<key>name</key>
+	<string>PSL</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Line Comment</string>
+			<key>match</key>
+			<string>[ \t]*\/\/.*</string>
+			<key>name</key>
+			<string>comment.line.double-slash</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Error</string>
+			<key>match</key>
+			<string>\berror\b</string>
+			<key>name</key>
+			<string>invalid.deprecated</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Chapter</string>
+			<key>match</key>
+			<string>\bchapter .*</string>
+			<key>name</key>
+			<string>keyword.other</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control</string>
+			<key>match</key>
+			<string>\binlineMap\b|\bcheck\b|\bif\b|\belse\b|\belseif\b|\belse\b|\bswitch\b|\bdefault\b|\bdown\b|\bup\b</string>
+			<key>name</key>
+			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operators</string>
+			<key>match</key>
+			<string>\band\b|\bor\b|\bnot\b|\bround\b|\bon\b</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Constant Keywords</string>
+			<key>match</key>
+			<string>\bINF\b|\bNINF\b|\btrue\b|\bfalse\b</string>
+			<key>name</key>
+			<string>support.type</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Parameters</string>
+			<key>match</key>
+			<string>\#[_A-Za-z]+\w*\b</string>
+			<key>name</key>
+			<string>constant.character</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Numbers</string>
+			<key>match</key>
+			<string>\b[0-9]+(.[0-9]+)?\%?</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Variables</string>
+			<key>match</key>
+			<string>[_A-Za-z]+\w*\b</string>
+			<key>name</key>
+			<string>variable.parameter</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.psl</string>
+	<key>uuid</key>
+	<string>39cf642a-3358-4c3b-88d0-d38576c93e51</string>
+</dict>
+</plist>
