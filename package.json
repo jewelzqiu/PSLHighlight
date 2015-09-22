@@ -1,7 +1,7 @@
 {
   "name": "PSLHighlight",
   "description": "Syntax highlignt support for PSL language.",
-  "author": "qiu_z",
+  "author": "jewelzqiu",
   "details": "https://github.com/jewelzqiu/SublimePSL",
   "labels": ["language syntax"],
   "releases": [
