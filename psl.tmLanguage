@@ -65,7 +65,7 @@
 			<key>match</key>
 			<string>\#[_A-Za-z]+\w*\b</string>
 			<key>name</key>
-			<string>constant.character</string>
+			<string>variable.language</string>
 		</dict>
 		<dict>
 			<key>comment</key>

@@ -31,7 +31,7 @@ patterns:
   match: \b(?i:INF|NINF|true|false)\b
 
 - comment: Parameters
-  name: constant.character
+  name: variable.language
   match: \#[_A-Za-z]+\w*\b
 
 - comment: Numbers
