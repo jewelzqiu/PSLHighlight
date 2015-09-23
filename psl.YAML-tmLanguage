@@ -8,27 +8,27 @@ uuid: 39cf642a-3358-4c3b-88d0-d38576c93e51
 patterns:
 - comment: Line Comment
   name: comment.line.double-slash
-  match: '[ \t]*\/\/.*'
+  match: \/\/.*
 
 - comment: Error
   name: invalid.deprecated
-  match: \berror\b
+  match: \b(?i:error)\b
 
 - comment: Chapter
   name: keyword.other
-  match: \bchapter .*
+  match: \b(?i:chapter)\s\b\w*\b
 
 - comment: Control
   name: keyword.control
-  match: \binlineMap\b|\bcheck\b|\bif\b|\belse\b|\belseif\b|\belse\b|\bswitch\b|\bdefault\b|\bdown\b|\bup\b
+  match: \b(?i:inlineMap|check|if|else|elseif|switch|default|down|up)\b
 
 - comment: Operators
   name: keyword.operator
-  match: \band\b|\bor\b|\bnot\b|\bround\b|\bon\b
+  match: \b(?i:and|or|not|round|on)\b
 
 - comment: Constant Keywords
   name: support.type
-  match: \bINF\b|\bNINF\b|\btrue\b|\bfalse\b
+  match: \b(?i:INF|NINF|true|false)\b
 
 - comment: Parameters
   name: constant.character

@@ -15,7 +15,7 @@
 			<key>comment</key>
 			<string>Line Comment</string>
 			<key>match</key>
-			<string>[ \t]*\/\/.*</string>
+			<string>\/\/.*</string>
 			<key>name</key>
 			<string>comment.line.double-slash</string>
 		</dict>
@@ -23,7 +23,7 @@
 			<key>comment</key>
 			<string>Error</string>
 			<key>match</key>
-			<string>\berror\b</string>
+			<string>\b(?i:error)\b</string>
 			<key>name</key>
 			<string>invalid.deprecated</string>
 		</dict>
@@ -31,7 +31,7 @@
 			<key>comment</key>
 			<string>Chapter</string>
 			<key>match</key>
-			<string>\bchapter .*</string>
+			<string>\b(?i:chapter)\s\b\w*\b</string>
 			<key>name</key>
 			<string>keyword.other</string>
 		</dict>
@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>Control</string>
 			<key>match</key>
-			<string>\binlineMap\b|\bcheck\b|\bif\b|\belse\b|\belseif\b|\belse\b|\bswitch\b|\bdefault\b|\bdown\b|\bup\b</string>
+			<string>\b(?i:inlineMap|check|if|else|elseif|switch|default|down|up)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -47,7 +47,7 @@
 			<key>comment</key>
 			<string>Operators</string>
 			<key>match</key>
-			<string>\band\b|\bor\b|\bnot\b|\bround\b|\bon\b</string>
+			<string>\b(?i:and|or|not|round|on)\b</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -55,7 +55,7 @@
 			<key>comment</key>
 			<string>Constant Keywords</string>
 			<key>match</key>
-			<string>\bINF\b|\bNINF\b|\btrue\b|\bfalse\b</string>
+			<string>\b(?i:INF|NINF|true|false)\b</string>
 			<key>name</key>
 			<string>support.type</string>
 		</dict>
